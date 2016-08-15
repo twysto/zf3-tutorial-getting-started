@@ -34,9 +34,9 @@ Then edit the file `./config/autoload/global.php` and edit the connection string
 ```php
 'db' => [
     'driver' => 'PDO',
-    'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', 'zftutorial'),
-    'user' => 'root',
-    'password' => '',
+    'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', 'dbname'),
+    'user' => 'dbuser',
+    'password' => 'dbpass',
 ],
 ```
 
