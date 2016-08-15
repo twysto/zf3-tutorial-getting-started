@@ -13,7 +13,7 @@ Getting Started with Zend Framework 3 is just as fast as following this few step
 $ cd /to/projects/root/folder
 $ git clone https://github.com/twysto/zf3-tutorial-getting-started.git
 $ cd zf3-tutorial-getting-started
-$ composer install
+$ composer update
 ```
 
 ## Run with the PHP built-in server:
