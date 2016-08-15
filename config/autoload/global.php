@@ -14,8 +14,8 @@
 return [
     'db' => [
         'driver' => 'PDO',
-        'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', 'zftutorial'),
-        'user' => 'root',
+        'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', ''),
+        'user' => '',
         'password' => '',
     ],
 ];
