@@ -25,13 +25,13 @@ return [
         // modules are loaded. These effectively override configuration
         // provided by modules themselves. Paths may use GLOB_BRACE notation.
         'config_glob_paths' => [
-            realpath(__DIR__) . '/autoload/{,*.}global,{,*.}local.php',
+            realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php',
         ],
 
         // Whether or not to enable a configuration cache.
         // If enabled, the merged configuration will be cached and used in
         // subsequent requests.
-        'config_cache_enabled' => true,
+        'config_cache_enabled' => false,
 
         // The key used to create the configuration cache file name.
         'config_cache_key' => 'application.config.cache',
