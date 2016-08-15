@@ -29,15 +29,18 @@ INSERT INTO album (artist, title) VALUES ('Lana Del Rey', 'Born To Die');
 INSERT INTO album (artist, title) VALUES ('Gotye', 'Making Mirrors');
 ```
 
-Then edit the file `./config/autoload/global.php` and edit the connection string with your own database name, user name and password.
+Then copy the `./config/autoload/local.php.dist` file into `./config/autoload/local.php` and add this to the returned array.
+Change the `dbname`, `dbuser` and `dbpass` values with respectively your database name, user name and password.
 
 ```php
-'db' => [
-    'driver' => 'PDO',
-    'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', 'dbname'),
-    'user' => 'dbuser',
-    'password' => 'dbpass',
-],
+return [
+    'db' => [
+        'driver' => 'PDO',
+        'dsn' => sprintf('mysql:host=%s;port=%s;dbname=%s', 'localhost', '3306', 'dbname'),
+        'user' => 'dbuser',
+        'password' => 'dbpass',
+    ],
+];
 ```
 
 ## Run with the PHP built-in server
